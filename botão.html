@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botão</title>
+    <style>
+
+button{
+    border: 0;
+    padding: 0;
+    background-color: rgb(219,160,29);
+    color: white;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: -36%;
+    font-weight: 700;
+    font-size: 120%;
+    animation-name: botao;
+    animation-duration: 2.2s;
+}
+.txt{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes botao{
+    from{
+        transform:scale3d(-2, -2, -3);
+    }
+    to{
+        transform: scale3d(1, 1, 1); 
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="txt">
+        <button href="">Login</button>
+        <button href="">Cadastrar</button>
+    </div>
+</body>
+</html>
+
+
