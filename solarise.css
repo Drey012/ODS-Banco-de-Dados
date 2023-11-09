@@ -10,6 +10,10 @@
     color: rgb(209, 156, 56);
 }
 
+body, html{
+    height: 100%;
+}
+
 input, select{
     border-radius: 25px;
     height: 43px;
@@ -146,7 +150,7 @@ header>img{
 .laranja{
     background-image: linear-gradient(90deg, #ffde59, #ff914d);
     width: 35%;
-    height: 800px;
+    height: 1000px;
     float: right;
     z-index: -5;
     position: relative;

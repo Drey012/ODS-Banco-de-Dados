@@ -7,61 +7,69 @@
     <title>Login</title>
     <link rel="icon" href="favicon-ods.webp" type="image/x-icon">
     <link rel="stylesheet" href="solarise.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="prov-removebg-preview.png" alt="ícone provisório">
-        <p class="txt_head">
-            Home
-        </p>
-        <p class="txt_head">
-            Agendar
-        </p>
-    <div class="caixa">
-        <img src="lupa.png">
-        <input type="text" class="pesquisa" id="pesquisa">
-    </div>
-    </header>
-    <div class="laranja">
+    
+        <header>
+            <img src="prov-removebg-preview.png" alt="ícone provisório">
+            <p class="txt_head">
+                Home
+            </p>
+            <p class="txt_head">
+                Agendar
+            </p>
+            <div class="caixa">
+                <img src="lupa.png">
+                <input type="text" class="pesquisa" id="pesquisa">
+            </div>
+        </header>
+        <div class="laranja">
 
-    </div>
+        </div>
 
-    <form class="container">
-        <p>Quer saber o valor para instalar <b>Energia Solar?</b></p>
-        <div class="forms">
-            <div class="parte">
-                <label for="CEP">Insira seu CEP:</label>
-                <input type="text" name="CEP" id="CEP" placeholder="00000-000" maxlength="8">
+        <form class="container">
+            <p>Quer saber o valor para instalar <b>Energia Solar?</b></p>
+            <div class="forms">
+                <div class="parte">
+                    <label for="CEP">Insira seu CEP:</label>
+                    <input type="text" name="CEP" id="CEP" placeholder="00000-000" maxlength="8">
+                </div>
+                <div class="parte">
+                    <label for="luz">Quanto você gasta com luz?</label>
+                    <input type="number" name="luz" id="luz" placeholder="R$0,00" maxlength="8">
+                </div>
+                <div class="parte">
+                    <label for="conces">Qual é a sua Concessionária?</label>
+                    <select name="conces" id="emp">
+                        <option value="null" selected disabled>Selecione uma Concessionária</option>
+                        <option value="Band">Bandeirantes</option>
+                        <option value="AME">AME</option>
+                    </select>
+                </div>
+                <div class="parte">
+                    <label for="email">Insira seu e-mail:</label>
+                    <input type="text" name="email" id="mail" placeholder="Email:" maxlength="100">
+                </div>
             </div>
-            <div class="parte">
-                <label for="luz">Quanto você gasta com luz?</label>
-                <input type="number" name="luz" id="luz" placeholder="R$0,00" maxlength="8">
+        </form>
+
+        <div class="intro">
+            <div class="txt">
+                <p id="bemvindo">Bem-Vindo à Solarise Pro!</p>
             </div>
-            <div class="parte">
-                <label for="conces">Qual é a sua Concessionária?</label>
-                <select name="conces" id="emp">
-                    <option value="null" selected disabled>Selecione uma Concessionária</option>
-                    <option value="Band">Bandeirantes</option>
-                    <option value="AME">AME</option>
-                </select>
+            <div class="txt">
+                <p id="paineis">Painéis Solares</p>
             </div>
-            <div class="parte">
-                <label for="email">Insira seu e-mail:</label>
-                <input type="text" name="email" id="mail" placeholder="Email:" maxlength="100">
+            <div class="txt">
+                <button onclick="window.location.href = 'login.html'">Login</button>
+                <button onclick="window.location.href = 'cadastro.html'">Cadastrar</button>
             </div>
         </div>
-    </form>
-
-    <div class="intro">
-        <div class="txt"><p id="bemvindo">Bem-Vindo à Solarise Pro!</p></div>
-        <div class="txt"><p id="paineis">Painéis Solares</p></div>
-        <div class="txt">
-            <button href="https://drey012.github.io/ODS-Banco-de-Dados/login.html">Login</button>
-            <button href="#">Cadastrar</button>
-        </div>
-    </div>
+    
 </body>
 
 </html>
