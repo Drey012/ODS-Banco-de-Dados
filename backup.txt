@@ -10,3 +10,4 @@ AVISO DA TELA DE LOGIN
 
 ==================================================================
 
+Energia = potência do módulo solar x tempo x (rendimento)

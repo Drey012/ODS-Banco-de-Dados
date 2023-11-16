@@ -254,8 +254,7 @@ input:focus-visible, select:focus-visible{
     font-size: 33px;
     font-weight: 800;
     font-family: sans-serif;
-    animation-name: bemv;
-    animation-duration: 1.8s;
+   
 }
 
 @keyframes bemv{
@@ -289,8 +288,7 @@ input:focus-visible, select:focus-visible{
     font-family: sans-serif;
     color: rgb(219,160,29);
     margin-left: 40px;
-    animation-name: bemv;
-    animation-duration: 2s;
+    
 }
 
 button{
@@ -308,6 +306,7 @@ button{
     animation-name: botao;
     animation-duration: 2.2s;
     box-shadow: 1px 0.5px 4px black;
+    cursor: pointer;
 }
 
 @keyframes botao{
@@ -351,4 +350,8 @@ button:not(:hover){
     margin-right: auto;
     width: 10%;
     height: 64%;
+}
+
+a{
+    cursor: pointer;
 }
