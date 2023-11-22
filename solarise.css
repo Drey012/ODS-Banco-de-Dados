@@ -78,13 +78,13 @@ header{
 
 
 header>img{
-    margin-left: 6%;
+    margin-left: -45%;
 }
 .txt_head{
     border-bottom: 2px solid black;
     font-size: 30px;
     font-weight: 600;
-    margin-left: 8%;
+    margin-left: -20%;
     font-family: sans-serif;
     width: 5.8%;
 }
@@ -92,8 +92,9 @@ header>img{
 .txt_head:last-of-type{
     font-size: 20px;
     border: 0px;
-    margin-left: 5%;
+    margin-left: -20%;
     font-weight: 400;
+    display: none;
 }
 
 .txt_head:last-of-type:hover{
@@ -145,6 +146,7 @@ header>img{
     background-color: white;
     color: black;
     background-image: none;
+    padding-left: -10px;
 }
 
 .laranja{
@@ -329,6 +331,11 @@ button:not(:hover){
     transition: 500ms linear;
 }
 
+form button{
+    align-self: center;
+    margin-left: 0;
+}
+
 .caixa{
     margin-left: auto;
     margin-right: 5%;
@@ -338,18 +345,18 @@ button:not(:hover){
     border: 0px solid transparent;
     background-color: white;
     overflow: hidden;
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-content: center;
 }
 
 .caixa img{
-    margin-top: 3%;
-    margin-left: 3%;
+    margin-top: 0;
+    margin-left: -2%;
     margin-right: auto;
-    width: 10%;
-    height: 64%;
+    width: 20%;
+    height: 100%;
 }
 
 a{

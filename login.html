@@ -33,7 +33,7 @@
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" maxlength="15" name="senha">
 
-                <button href="#">Entrar</button>
+                <button type="button" onclick="validar()">Entrar</button>
 
                 <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </form>
@@ -41,7 +41,17 @@
     </div>
         <img src="fundo_login.png" alt="imagem de fundo da tela de login" id="fundo">
     
-
+    <div class="aviso">
+        <div class="caixa">
+            <h1 id="titulo_caixa">Parabéns, você entrou!</h1>
+            <p id="mail">seu e-mail: <p id="mai"></p></p>
+            <p id="senh">sua senha: <p id="semha"></p></p>
+            <div class="botoes">
+                <button type="button" onclick="voltar()">Voltar</button>
+                <button id="reload" onclick="reload()">Reload</button>
+            </div>
+        </div>
+    </div>
         
 </body>
     <script src="login.js" type="text/javascript"></script>

@@ -11,3 +11,12 @@ AVISO DA TELA DE LOGIN
 ==================================================================
 
 Energia = potência do módulo solar x tempo x (rendimento)
+
+
+==================================================================
+
+CAIXA DE PESQUISA
+    <div class="caixa">
+        <img src="lupa.png">
+        <input type="text" class="pesquisa" id="pesquisa">
+    </div>

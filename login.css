@@ -195,3 +195,55 @@ label{
 a{
     cursor: pointer;
 }
+
+
+.aviso{
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    position: relative;
+    float: right;
+    display: none;
+    align-items: center;
+    z-index: 10;
+    margin-right: 25%;
+    margin-top: -38%;
+    box-shadow: 15px 6px 12px #1C1C39;
+}
+
+.caixa{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    color: black;
+}
+
+.caixa button{ 
+    border: 1px outset lightgrey;
+    border-radius: 0;
+    background-color: grey;
+    width: 80px;
+    height: 30px;
+    font-weight: 300;
+    animation: 0;
+}
+
+.botoes{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between ;
+}
+
+.caixa p{
+    color: black;
+}
+
+.caixa h1{
+    font-size: 1.1rem;
+}

@@ -28,9 +28,8 @@ inputLuz.addEventListener("input", function() {
 });
 
 function calculadoraSolar() {
-    var email = document.getElementById("mail").value;
+    var email = document.getElementById("email").value;
     var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expressão regular para validar e-mail
-    const radiacao = 4.93
     var conta = document.querySelector("#luz").value
     var contaf = parseFloat(conta.replace(",", ".").replace(/[^\d,.]/g, ""))
     var conc = document.getElementById("emp").value
@@ -42,15 +41,15 @@ function calculadoraSolar() {
         var taxa = 0.4
     }
 
-    var kwh = contaf / taxa *(1.4)
-    var produc = (radiacao * 0.2 * 265) * 30
-    var qtd = kwh / (produc/30)
+    var kwh = contaf / taxa 
+    var produc = (kwh * 1000) / (4.93 * 0.8)
+    var qtd = produc / 11100 
     var area = qtd * 4.5
 
    
 
     if (regex.test(email)) {
-        console.log(`Email: ${email}\nConta: ${contaf}\nConcessionária: ${conc}\nTaxa: ${taxa}\nKilowatt: ${kwh.toFixed(0)}\nProdução: ${produc.toFixed(0)}\nQtd: ${qtd}\nÁrea: ${area}`)
+        console.log(`Email: ${email}\nConta: ${contaf}\nConcessionária: ${conc}\nTaxa: ${taxa}\nKilowatt: ${kwh.toFixed(0)}\nProdução: ${produc.toFixed(0)}\nQtd: ${qtd.toFixed(0)}\nÁrea: ${area.toFixed(0)}`)
         alert("Email válido!");
     } else {
         alert("Por favor, insira um email válido.");

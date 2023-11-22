@@ -8,8 +8,10 @@
     <link rel="icon" href="favicon-ods.webp" type="image/x-icon">
     <link rel="stylesheet" href="cadastro.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -35,16 +37,32 @@
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" maxlength="15" name="senha">
 
-                <button href="#">Entrar</button>
+                <button type="button" onclick="validar()">Entrar</button>
 
                 <p>Já tem uma conta cadastrada? <a href="login.html">Login</a></p>
             </form>
         </div>
     </div>
-        <img src="fundo_cadastro.png" alt="imagem de fundo da tela de cadastro" id="fundo">
-    
+    <img src="fundo_cadastro.png" alt="imagem de fundo da tela de cadastro" id="fundo">
 
-        
+    <div class="aviso">
+        <div class="caixa">
+            <h1 id="titulo_caixa">Boaa <h2 id="span"></h2>, cadastro realizado!</h1>
+            <p id="mail">seu e-mail:
+            <p id="mai"></p>
+            </p>
+            <p id="senh">sua senha:
+            <p id="semha"></p>
+            </p>
+            <div class="botoes">
+                <button type="button" onclick="voltar()">Voltar</button>
+                <button id="reload" onclick="reload()">Reload</button>
+            </div>
+        </div>
+    </div>
+
+
 </body>
-    <script src="login.js" type="text/javascript"></script>
+<script src="cadastro.js" type="text/javascript"></script>
+
 </html>
