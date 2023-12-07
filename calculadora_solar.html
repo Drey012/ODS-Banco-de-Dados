@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Solar</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="tudo">
+        <div class="content">
+            <a href="solarise.html">
+                <img src="iconecalc.png" alt="seta de voltar">
+            </a>
+            <img src="casacalc.png" alt="casa com painéis solares" id="img_casa">
+            <div class="texto" id="potenciakit">
+                <p>POTÊNCIA TOTAL DO KIT</p>
+                <p><span id="potencia"></span>KWP</p>
+            </div>
+            <div class="textos">
+                <div class="texto" id="areatotal">
+                    <p>ÁREA NECESSÁRIA</p>
+                    <p><span id="area"></span>m²</p>
+                </div>
+                <div class="texto" id="quantidade">
+                    <p>QUANTIDADE DE MÓDULOS</p>
+                    <span id="qtd"></span>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="fundobra">
+            <h1>Calculadora Solar</h1>
+            <p id="neces">ESTE SERIA O <span>KIT IDEAL</span> PARA AS SUAS NECESSIDADES DE ENERGIA</p>
+            <div class="kit">
+                <p>Produção mensal:</p>
+                <p id="producao"><span id="kwh"></span> kWh/mês</p>
+                <img src="modulo.png" alt="ilustração dos módulos solares de 550W">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="solarise.js"></script>
+</html>

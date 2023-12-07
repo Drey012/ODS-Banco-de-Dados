@@ -5,14 +5,14 @@ function validar() {
     var senha = document.getElementById("senha").value;
     var nome = document.getElementById("nome").value;
   
-    if (regex.test(email) && senha != 0 && nome != 0) {
+    if (regex.test(email) && senha.length > 8 && nome != 0) {
       var caixa = document.querySelector(".aviso"); c = caixa.style;
       c.display = "block"
       document.getElementById("mai").innerHTML = email
       document.getElementById("semha").innerHTML = senha
       document.getElementById("span").innerHTML = nome
     } else {
-      alert("Por favor, insira um email válido.");
+      alert("Por favor, insira um email válido.\nA senha deve conter entre 8 e 15 caracteres.");
     }
   }
   

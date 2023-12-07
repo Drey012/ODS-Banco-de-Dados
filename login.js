@@ -4,7 +4,7 @@ function validar() {
   var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expressão regular para validar e-mail
   var senha = document.getElementById("senha").value;
 
-  if (regex.test(email) || senha.length >= 8) {
+  if (regex.test(email) && senha.length >= 8) {
     var caixa = document.querySelector(".aviso"); c = caixa.style;
     c.display = "block"
     document.getElementById("mai").innerHTML = email
